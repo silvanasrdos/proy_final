@@ -17,7 +17,13 @@ DATABASES = {
 
         #en caso de mysql
         #'ENGINE': 'django.db.backends.mysql',
+
+        #'NAME':os.getenv('DB_NAME'), #valor de la variable DB_NAME en .env
+        #USER
+        #PASSWD
+        #HOST
+        #PORT
     }
 }
 
-os.environ['DJANGO_PORT'] = '1952'
+os.environ['DJANGO_PORT'] = '1952' #8080
